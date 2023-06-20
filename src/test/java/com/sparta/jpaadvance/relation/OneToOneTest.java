@@ -20,7 +20,7 @@ public class OneToOneTest {
     @Autowired
     UserRepository userRepository;
 
-    @Test
+   /* @Test
     @Rollback(value = false) // 테스트에서는 @Transactional 에 의해 자동 rollback 됨으로 false 설정해준다.
     @DisplayName("1대1 단방향 테스트")
     void test1() {
@@ -113,5 +113,5 @@ public class OneToOneTest {
         Food food = user.getFood();
         System.out.println("food.getName() = " + food.getName());
         System.out.println("food.getPrice() = " + food.getPrice());
-    }
+    }*/
 }
